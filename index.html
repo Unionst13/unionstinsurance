@@ -1,604 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Union St Insurance Group | Instant Quotes in Illinois & Indiana</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='5' y='20' width='90' height='60' rx='10' fill='%230f766e'/%3E%3Ctext x='50' y='58' font-size='28' text-anchor='middle' fill='white' font-family='Arial'%3EUS%3C/text%3E%3C/svg%3E" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Union St Insurance Group</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <!-- Street Sign Logo (Teal Themed) -->
-        <svg viewBox="0 0 220 120" width="90" height="65" xmlns="http://www.w3.org/2000/svg">
-          <!-- Pole -->
-          <rect x="104" y="10" width="12" height="100" fill="#374151" />
-          <rect x="108" y="10" width="4" height="100" fill="#6b7280" />
 
-          <!-- Top Sign (Union St) -->
-          <g transform="rotate(-8 110 45)">
-            <rect x="20" y="20" width="180" height="40" rx="6" fill="#0f766e" stroke="#1f2937" stroke-width="3"/>
-            <rect x="20" y="20" width="180" height="40" rx="6" fill="none" stroke="#e5e7eb" stroke-width="2" opacity="0.6"/>
-            <text x="110" y="45" text-anchor="middle" font-size="22" fill="#ffffff" font-weight="bold" font-family="Arial, sans-serif">UNION ST</text>
-          </g>
+<body class="font-sans text-gray-800">
 
-          <!-- Bottom Sign (Insurance) -->
-          <g transform="rotate(6 110 75)">
-            <rect x="40" y="60" width="140" height="34" rx="6" fill="#374151" stroke="#111827" stroke-width="3"/>
-            <rect x="40" y="60" width="140" height="34" rx="6" fill="none" stroke="#9ca3af" stroke-width="2" opacity="0.5"/>
-            <text x="110" y="82" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="bold" font-family="Arial, sans-serif">INSURANCE</text>
-          </g>
-        </svg>
-        <div>
-          <h1 class="text-xl font-bold">Union St Insurance Group</h1>
-          <p class="text-xs text-gray-500">Serving Illinois & Indiana</p>
-        </div>
-      </div>
-      <nav class="hidden md:flex gap-6 text-sm font-medium">
-        <a href="#auto" class="hover:text-teal-700">Auto</a>
-        <a href="#home" class="hover:text-teal-700">Home</a>
-        <a href="#life" class="hover:text-teal-700">Life</a>
-        <a href="#business" class="hover:text-teal-700">Business</a>
-      </nav>
-      <div class="flex gap-2">
-        <a href="#auto" class="bg-teal-700 text-white px-4 py-2 rounded shadow hover:bg-teal-800">INSTANT QUOTE</a>
-        <a href="tel:+12172824441" class="bg-white text-teal-700 border border-teal-700 px-4 py-2 rounded shadow font-semibold">Call Us</a>
-        <a href="sms:+12172824441" class="bg-white text-teal-700 border border-teal-700 px-4 py-2 rounded shadow font-semibold">Text Us</a>
-      </div>
-    </div>
-  </header>
+<!-- Header -->
+<header class="bg-white shadow sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
 
-  <!-- Hero -->
-  <section class="text-white bg-cover bg-center relative" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');">
-    <div class="absolute inset-0 bg-teal-900/60"></div>
-    <div class="relative max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-4xl font-bold mb-4">Instant Insurance Quotes & Coverage</h2>
-        <p class="mb-6 text-lg">Union St Insurance Group is an independent brokerage appointed with over 30 of the nation’s top insurance companies. We make insurance companies compete for your business—so you get the best coverage at the best price.</p>
-        <p class="mb-6">Serving all of Illinois and Indiana with fast, professional service and instant coverage options.</p>
-        <a href="#auto" class="bg-white text-teal-700 font-semibold px-6 py-3 rounded shadow">Get Your Instant Quote</a>
-      </div>
-      <div class="bg-white rounded-lg p-6 text-gray-800 shadow">
-        <h3 class="text-2xl font-bold mb-4">Why Choose Union St Insurance?</h3>
-        <ul class="space-y-3 list-disc list-inside">
-          <li>Access to 30+ top-rated insurance carriers</li>
-          <li>Instant quotes and fast coverage binding</li>
-          <li>Personal & commercial insurance specialists</li>
-          <li>Serving all of Illinois & Indiana</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quick Quote Selection -->
-  <section class="max-w-7xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold text-center mb-8">Start Your Quote</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-      <a href="#auto" class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-        <div class="text-4xl mb-2">🚗</div>
-        <p class="font-semibold">Auto Insurance</p>
-      </a>
-      <a href="#home" class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-        <div class="text-4xl mb-2">🏡</div>
-        <p class="font-semibold">Home Insurance</p>
-      </a>
-      <a href="#life" class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-        <div class="text-4xl mb-2">❤️</div>
-        <p class="font-semibold">Life Insurance</p>
-      </a>
-      <a href="#business" class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-        <div class="text-4xl mb-2">🏢</div>
-        <p class="font-semibold">Business Insurance</p>
-      </a>
-    </div>
-  </section>
-
-  <!-- About the Agency -->
-  <section class="bg-gray-100 py-16">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">About Union St Insurance Group</h2>
-      <p class="text-lg mb-4">Union St Insurance Group is an independent insurance brokerage based in Decatur, Illinois, proudly serving clients across Illinois and Indiana. As a brokerage appointed with more than 30 of the nation’s top insurance companies, we compare multiple options to find the best coverage and value for each client.</p>
-      <p class="text-lg">Our mission is to provide personalized guidance, fast quotes, and reliable protection for individuals, families, and businesses. We work for you — not the insurance company — ensuring you receive competitive rates and coverage tailored to your unique needs.</p>
-    </div>
-  </section>
-
-  <!-- Compare 30+ Insurance Companies -->
-  <section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">Compare 30+ Top Insurance Companies</h2>
-      <p class="mb-8 text-gray-600">As an independent brokerage, Union St Insurance Group compares policies from multiple highly rated insurance carriers to find the best coverage and value for our clients. Instead of calling several companies yourself, we shop the market for you.</p>
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center text-sm font-semibold opacity-80">
-        <div>Nationwide</div>
-        <div>Hanover</div>
-        <div>Chubb</div>
-        <div>Foremost</div>
-        <div>Bristol West</div>
-        <div>American Modern</div>
-        <div>AmTrust</div>
-        <div>BiBerk</div>
-        <div>Next Insurance</div>
-        <div>Branch</div>
-        <div>Root</div>
-        <div>Great American</div>
-      </div>
-      <div class="mt-10">
-        <a href="#auto" class="bg-teal-700 text-white px-6 py-3 rounded shadow hover:bg-teal-800 font-semibold">Compare Quotes Now</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Local SEO Section -->
-  <section class="py-16 bg-gray-100">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">Independent Insurance Agency Serving Decatur, Illinois</h2>
-      <p class="text-lg text-gray-700 mb-4">Union St Insurance Group proudly serves individuals, families, and businesses throughout Decatur and surrounding Illinois communities. As an independent insurance agency, we work with many insurance companies to provide competitive quotes for auto insurance, homeowners insurance, life insurance, and business insurance.</p>
-      <p class="text-lg text-gray-700">If you're searching for an insurance agent in Decatur, Illinois who can compare multiple companies and provide personalized service, Union St Insurance Group is here to help. Our goal is to make insurance simple while helping our clients find the best protection at the best price.</p>
-    </div>
-  </section>
-
-  <!-- Auto Insurance Form -->
-  <section id="auto" class="max-w-7xl mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold mb-6">Auto Insurance Instant Quote</h2>
-    <form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="bg-white p-6 rounded shadow space-y-6">
-      <div class="grid md:grid-cols-2 gap-4">
-        <input type="text" placeholder="Full Name" class="border p-3 rounded" required>
-        <input type="text" placeholder="Address" class="border p-3 rounded" required>
-        <input type="date" placeholder="Date of Birth" class="border p-3 rounded" required>
-        <input type="text" placeholder="Driver's License Number" class="border p-3 rounded" required>
-      </div>
+    <div class="flex items-center gap-3">
+      <!-- Street Sign Logo -->
+      <svg viewBox="0 0 220 120" width="80" height="60" xmlns="http://www.w3.org/2000/svg">
+        <rect x="104" y="10" width="12" height="100" fill="#374151" />
+        <rect x="108" y="10" width="4" height="100" fill="#6b7280" />
+        <g transform="rotate(-8 110 45)">
+          <rect x="20" y="20" width="180" height="40" rx="6" fill="#0f766e" stroke="#1f2937" stroke-width="3"/>
+          <text x="110" y="45" text-anchor="middle" font-size="22" fill="#ffffff" font-weight="bold">UNION ST</text>
+        </g>
+        <g transform="rotate(6 110 75)">
+          <rect x="40" y="60" width="140" height="34" rx="6" fill="#374151" stroke="#111827" stroke-width="3"/>
+          <text x="110" y="82" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="bold">INSURANCE</text>
+        </g>
+      </svg>
 
       <div>
-        <label class="font-semibold">Do you currently have auto insurance?</label>
-        <select class="border p-3 rounded w-full mt-2">
-          <option>Yes</option>
-          <option>No</option>
-        </select>
-      </div>
-
-      <div>
-        <label class="font-semibold">Driving History (Accidents, Tickets, etc.)</label>
-        <textarea class="border p-3 rounded w-full mt-2" rows="3"></textarea>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-4">
-        <div class="flex flex-col">
-          <label class="font-semibold mb-1">Coverage Options Desired</label>
-          <label class="flex items-center gap-2"><input type="checkbox" class="accent-teal-700"> Liability Only</label>
-          <div class="flex items-center gap-2">
-            <label class="flex items-center gap-2"><input type="checkbox" class="accent-teal-700"> Comprehensive Coverage</label>
-            <button type="button" onclick="toggleInfo('compInfo')" class="text-teal-700 font-bold border border-teal-700 rounded-full w-5 h-5 text-xs flex items-center justify-center">?</button>
-          </div>
-          <div id="compInfo" class="hidden text-xs text-gray-600 ml-6 mt-1">Covers damage to your vehicle from non-collision events such as theft, vandalism, fire, weather, falling objects, or hitting an animal.</div>
-          <div class="flex items-center gap-2">
-            <label class="flex items-center gap-2"><input type="checkbox" class="accent-teal-700"> Collision Coverage</label>
-            <button type="button" onclick="toggleInfo('collInfo')" class="text-teal-700 font-bold border border-teal-700 rounded-full w-5 h-5 text-xs flex items-center justify-center">?</button>
-          </div>
-          <div id="collInfo" class="hidden text-xs text-gray-600 ml-6 mt-1">Covers damage to your vehicle resulting from a collision with another vehicle or object, regardless of fault, subject to your deductible.</div>
-          <label class="flex items-center gap-2"><input type="checkbox" class="accent-teal-700"> Roadside Assistance</label>
-          <label class="flex items-center gap-2"><input type="checkbox" class="accent-teal-700"> Rental Car Reimbursement</label>
-        </div>
-
-        <div class="flex flex-col gap-4">
-          <div>
-            <label class="font-semibold">Comprehensive Deductible</label>
-            <select class="border p-3 rounded w-full mt-1">
-              <option value="">Select Deductible</option>
-              <option>$200</option>
-              <option>$500</option>
-              <option>$1000</option>
-              <option>$2000</option>
-            </select>
-          </div>
-          <div>
-            <label class="font-semibold">Collision Deductible</label>
-            <select class="border p-3 rounded w-full mt-1">
-              <option value="">Select Deductible</option>
-              <option>$200</option>
-              <option>$500</option>
-              <option>$1000</option>
-              <option>$2000</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <!-- Additional Drivers -->
-      <div>
-        <div class="flex justify-between items-center mb-2">
-          <h3 class="font-bold">Additional Drivers</h3>
-          <button type="button" onclick="addDriver()" class="text-teal-700 font-semibold">+ Add Driver</button>
-        </div>
-        <div id="drivers" class="space-y-3"></div>
-      </div>
-
-      <!-- Vehicles -->
-      <div>
-        <div class="flex justify-between items-center mb-2">
-          <h3 class="font-bold">Vehicles</h3>
-          <button type="button" onclick="addVehicle()" class="text-teal-700 font-semibold">+ Add Vehicle</button>
-        </div>
-        <div id="vehicles" class="space-y-3"></div>
-      </div>
-
-      <div class="text-sm text-gray-600">
-        <p><strong>Legal Disclosure (Illinois):</strong> By submitting this form, you consent to be contacted by Union St Insurance Group via phone, email, or text regarding insurance quotes and policy options. Submission of this form does not bind coverage. All quotes are subject to underwriting approval and carrier eligibility guidelines. Coverage is not effective until confirmed and bound by a licensed agent. Your information will be used solely for insurance quoting purposes in accordance with applicable Illinois and federal privacy laws.</p>
-      </div>
-
-      <button class="bg-teal-700 text-white px-6 py-3 rounded shadow hover:bg-teal-800">Submit Auto Quote Request</button>
-    </form>
-  </section>
-
-  <!-- Homeowners Insurance -->
-  <section id="home" class="bg-gray-100 py-16">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-6">Homeowners Insurance Quote</h2>
-      <form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="bg-white p-6 rounded shadow grid md:grid-cols-2 gap-4">
-        <input type="text" placeholder="Full Name" class="border p-3 rounded" required>
-        <input type="text" placeholder="Property Address" class="border p-3 rounded" required>
-        <input type="number" placeholder="Year Built" class="border p-3 rounded">
-        <input type="number" placeholder="Square Footage (Living Area)" class="border p-3 rounded">
-        <input type="number" placeholder="Estimated Home Value" class="border p-3 rounded">
-        <div class="flex flex-col">
-          <label class="text-sm font-semibold">Is there a basement?</label>
-          <select class="border p-3 rounded mt-1">
-            <option value="">Select</option>
-            <option>Yes</option>
-            <option>No</option>
-          </select>
-        </div>
-        <div class="flex flex-col">
-          <label class="text-sm font-semibold">If yes, is the basement finished?</label>
-          <select class="border p-3 rounded mt-1">
-            <option value="">Select</option>
-            <option>Finished</option>
-            <option>Unfinished</option>
-            <option>No Basement</option>
-          </select>
-        </div>
-        <div class="flex flex-col">
-          <label class="text-sm font-semibold">Is there a swimming pool on the property?</label>
-          <select class="border p-3 rounded mt-1">
-            <option value="">Select</option>
-            <option>Yes</option>
-            <option>No</option>
-          </select>
-        </div>
-        <input type="number" placeholder="Age of Roof (Years)" class="border p-3 rounded">
-        <textarea placeholder="Additional Property Details" class="border p-3 rounded md:col-span-2"></textarea>
-        <div class="md:col-span-2 text-sm text-gray-600">
-          Quotes are estimates only and subject to underwriting approval. Coverage is not bound until confirmed by a licensed agent of Union St Insurance Group.
-        </div>
-        <button class="bg-teal-700 text-white px-6 py-3 rounded shadow md:col-span-2">Submit Home Quote Request</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Life Insurance -->
-  <section id="life" class="max-w-7xl mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold mb-6">Life Insurance Quote</h2>
-    <form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="bg-white p-6 rounded shadow grid md:grid-cols-2 gap-4">
-      <input type="text" placeholder="Full Name" class="border p-3 rounded" required>
-      <input type="date" placeholder="Date of Birth" class="border p-3 rounded" required>
-      <input type="number" placeholder="Coverage Amount Desired" class="border p-3 rounded">
-      <input type="text" placeholder="Tobacco Use?" class="border p-3 rounded">
-      <textarea placeholder="Health Conditions (if any)" class="border p-3 rounded md:col-span-2"></textarea>
-      <div class="md:col-span-2 text-sm text-gray-600">
-        Life insurance quotes are preliminary estimates and subject to medical underwriting and carrier approval.
-      </div>
-      <button class="bg-teal-700 text-white px-6 py-3 rounded shadow md:col-span-2">Submit Life Quote Request</button>
-    </form>
-  </section>
-
-  <!-- Business Insurance -->
-  <section id="business" class="bg-gray-100 py-16">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-6">Business Insurance Quote</h2>
-      <form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="bg-white p-6 rounded shadow grid md:grid-cols-2 gap-4">
-        <input type="text" placeholder="Business Name" class="border p-3 rounded" required>
-        <input type="text" placeholder="Business Address" class="border p-3 rounded" required>
-        <input type="text" placeholder="Type of Business" class="border p-3 rounded">
-        <input type="number" placeholder="Years in Business" class="border p-3 rounded">
-        <textarea placeholder="Coverage Needs & Details" class="border p-3 rounded md:col-span-2"></textarea>
-        <div class="md:col-span-2 text-sm text-gray-600">
-          Commercial insurance quotes are non-binding and subject to underwriting, carrier guidelines, and risk review.
-        </div>
-        <button class="bg-teal-700 text-white px-6 py-3 rounded shadow md:col-span-2">Submit Business Quote Request</button>
-      </form>
-    </div>
-  </section>
-
-    <!-- Customer Reviews -->
-  <section class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">What Our Clients Are Saying</h2>
-      <p class="text-gray-600 mb-10">We are proud to provide exceptional service and competitive insurance options to our clients across Illinois and Indiana.</p>
-      <div class="grid md:grid-cols-3 gap-6 text-left">
-        <div class="bg-gray-50 p-6 rounded-lg shadow">
-          <div class="text-yellow-500 text-lg mb-2">★★★★★</div>
-          <p class="text-sm mb-3">“Union St Insurance saved me hundreds on my auto and home policies. The process was quick and very professional.”</p>
-          <p class="text-xs font-semibold text-gray-500">– Sarah M., Decatur IL</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-lg shadow">
-          <div class="text-yellow-500 text-lg mb-2">★★★★★</div>
-          <p class="text-sm mb-3">“The agent took the time to explain my coverage options and found the best rate. Highly recommend this agency.”</p>
-          <p class="text-xs font-semibold text-gray-500">– James R., Springfield IL</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-lg shadow">
-          <div class="text-yellow-500 text-lg mb-2">★★★★★</div>
-          <p class="text-sm mb-3">“Fast quotes, great communication, and excellent service. I moved all my policies here.”</p>
-          <p class="text-xs font-semibold text-gray-500">– Tonya L., Champaign IL</p>
-        </div>
-      </div>
-      <div class="mt-10">
-        <a href="#" class="bg-teal-700 text-white px-6 py-3 rounded shadow hover:bg-teal-800 font-semibold">Read Our Google Reviews</a>
+        <h1 class="text-xl font-bold">Union St Insurance Group</h1>
+        <p class="text-xs text-gray-500">Serving Illinois & Indiana</p>
       </div>
     </div>
-  </section>
 
-  <!-- Make a Payment -->
-  <section id="payments" class="py-16 bg-white">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">Make a Payment</h2>
-      <p class="text-gray-600 mb-8">For your convenience, Union St Insurance Group offers secure online payment options. You may use the button below to submit agency service fees or policy down payments. For policy payments directly to your insurance carrier, please contact us for the appropriate carrier payment link.</p>
+<nav class="hidden md:flex gap-6 text-sm font-medium">
+<a href="#auto" class="hover:text-teal-700">Auto</a>
+<a href="#home" class="hover:text-teal-700">Home</a>
+<a href="#life" class="hover:text-teal-700">Life</a>
+<a href="#business" class="hover:text-teal-700">Business</a>
+<a href="#payments" class="hover:text-teal-700">Payment Center</a>
+<a href="#policy-change" class="hover:text-teal-700">Policy Change</a>
+<a href="#report-claim" class="hover:text-teal-700">File a Claim</a>
+</nav>
 
-      <div class="flex flex-col md:flex-row gap-4 justify-center">
-        <a href="https://paypal.me/unionstinsurance" class="bg-teal-700 text-white px-6 py-3 rounded shadow hover:bg-teal-800 font-semibold">Pay with PayPal / Card</a>
-        <a href="tel:+12172824441" class="bg-white border border-teal-700 text-teal-700 px-6 py-3 rounded shadow font-semibold">Call to Make a Payment</a>
-      </div>
+<button onclick="toggleMobileMenu()" class="md:hidden text-2xl">☰</button>
 
-      <p class="text-xs text-gray-500 mt-6">Payments submitted through this page are processed securely by a third‑party payment processor. Submission of payment does not bind or guarantee insurance coverage. Coverage is effective only after confirmation and binding by a licensed agent.</p>
-    </div>
-  </section>
+</div>
 
-    <!-- Carrier Payment Center -->
-  <section id="carrier-payments" class="py-16 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">Carrier Payment Center</h2>
-      <p class="text-gray-600 mb-8">If you already have a policy and need to make a payment directly to your insurance company, you may use the links below. If you are unsure which carrier your policy is with, please call or text us at <strong>217‑282‑4441</strong> and we will be happy to assist you.</p>
+<div id="mobileMenu" class="hidden bg-white border-t md:hidden">
+<div class="flex flex-col text-center p-4 gap-3">
+<a href="#auto">Auto</a>
+<a href="#home">Home</a>
+<a href="#life">Life</a>
+<a href="#business">Business</a>
+<a href="#payments">Payment Center</a>
+<a href="#policy-change">Policy Change</a>
+<a href="#report-claim">File a Claim</a>
+</div>
+</div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-sm">
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">American Modern</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Amtrust Financial</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">BiBerk</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Branch</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Chubb</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Hugo Insurance</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Root Insurance</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Stonegate</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Unique Insurance</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Next Insurance</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Nationwide</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Hanover</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Great American</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Foremost</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Gainsco</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Bristol West</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Employers</a>
-        <a href="#" class="bg-white p-3 rounded shadow hover:shadow-md">Pie Insurance</a>
-      </div>
+</header>
 
-      <p class="text-xs text-gray-500 mt-8">Carrier payment links are provided for convenience only. Union St Insurance Group is not responsible for transactions processed directly through insurance carrier websites. Coverage status should always be confirmed with your insurance company or a licensed agent.</p>
-    </div>
-  </section>
+<!-- Hero -->
+<section class="bg-gray-100 py-16">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-4 items-center">
 
-    <!-- Customer Service Center -->
-  <section id="service-center" class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">Customer Service Center</h2>
-      <p class="text-gray-600 mb-10">Quickly access common policy service options. If you need immediate assistance, please call or text us at <strong>217‑282‑4441</strong>.</p>
+<div>
+<h2 class="text-4xl font-bold mb-4">Compare Insurance Quotes in Minutes</h2>
+<p class="text-gray-600 mb-6">Union St Insurance Group compares policies from top insurance carriers to find the best coverage and value.</p>
+<a href="#auto" class="bg-teal-700 text-white px-6 py-3 rounded shadow">Start Quote</a>
+</div>
 
-      <div class="grid md:grid-cols-5 gap-6 text-center">
-        <a href="#payments" class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md">
-          <div class="text-3xl mb-2">💳</div>
-          <p class="font-semibold">Make a Payment</p>
-        </a>
-        <a href="#carrier-payments" class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md">
-          <div class="text-3xl mb-2">🏦</div>
-          <p class="font-semibold">Carrier Payment Center</p>
-        </a>
-        <a href="#id-card" class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md">
-          <div class="text-3xl mb-2">🪪</div>
-          <p class="font-semibold">Request ID Card</p>
-        </a>
-        <a href="#policy-change" class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md">
-          <div class="text-3xl mb-2">📝</div>
-          <p class="font-semibold">Request Policy Change</p>
-        </a>
-        <a href="#report-claim" class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md">
-          <div class="text-3xl mb-2">⚠️</div>
-          <p class="font-semibold">Report a Claim</p>
-        </a>
-      </div>
-    </div>
-  </section>
+<div class="bg-white p-6 rounded shadow">
+<h3 class="text-xl font-bold mb-4">Get Your Rate in 60 Seconds</h3>
+<form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="space-y-3">
+<input type="text" placeholder="ZIP Code" class="border p-3 rounded w-full" required>
+<select class="border p-3 rounded w-full">
+<option>Insurance Type</option>
+<option>Auto</option>
+<option>Home</option>
+<option>Life</option>
+<option>Business</option>
+</select>
+<select class="border p-3 rounded w-full">
+<option>Currently Insured?</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+<input type="text" placeholder="Phone or Email" class="border p-3 rounded w-full" required>
+<button class="bg-teal-700 text-white w-full py-3 rounded">Get Quote</button>
+</form>
+</div>
 
-      <!-- Request Insurance ID Card -->
-  <section id="id-card" class="py-16 bg-gray-100">
-    <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-6 text-center">Request Insurance ID Card</h2>
-      <p class="text-gray-600 text-center mb-8">Need a copy of your insurance ID card? Submit the form below and we will email or text your ID card as quickly as possible.</p>
+</div>
+</section>
 
-      <form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="bg-white p-6 rounded shadow grid md:grid-cols-2 gap-4">
-        <input type="text" placeholder="Full Name" class="border p-3 rounded" required>
-        <input type="text" placeholder="Policy Number (if known)" class="border p-3 rounded">
-        <input type="text" placeholder="Phone Number" class="border p-3 rounded" required>
-        <input type="email" placeholder="Email Address" class="border p-3 rounded" required>
+<!-- Service Center -->
+<section class="py-16 bg-white">
+<div class="max-w-6xl mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold mb-6">Customer Service Center</h2>
+<div class="grid md:grid-cols-4 gap-6">
+<a href="#payments" class="p-6 shadow rounded">💳 Make Payment</a>
+<a href="#policy-change" class="p-6 shadow rounded">📝 Policy Change</a>
+<a href="#report-claim" class="p-6 shadow rounded">⚠️ File Claim</a>
+<a href="#id-card" class="p-6 shadow rounded">🪪 ID Card</a>
+</div>
+</div>
+</section>
 
-        <div class="md:col-span-2">
-          <label class="font-semibold">How would you like to receive your ID card?</label>
-          <select class="border p-3 rounded w-full mt-1">
-            <option>Email</option>
-            <option>Text Message</option>
-          </select>
-        </div>
+<!-- Payment Center -->
+<section id="payments" class="py-16 bg-gray-100">
+<div class="max-w-5xl mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold mb-6">Make a Payment</h2>
+<p class="mb-6">Submit policy down payments or agency service fees.</p>
+<a href="https://paypal.me/unionstinsurance" class="bg-teal-700 text-white px-6 py-3 rounded">Pay Now</a>
+</div>
+</section>
 
-        <textarea placeholder="Additional details (vehicle, driver, etc.)" class="border p-3 rounded md:col-span-2"></textarea>
+<!-- Policy Change -->
+<section id="policy-change" class="py-16 bg-white">
+<div class="max-w-5xl mx-auto px-4">
+<h2 class="text-3xl font-bold mb-6 text-center">Request Policy Change</h2>
+<form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="grid gap-4">
+<input type="text" placeholder="Full Name" class="border p-3 rounded">
+<input type="text" placeholder="Policy Number" class="border p-3 rounded">
+<textarea placeholder="Describe your requested change" class="border p-3 rounded"></textarea>
+<button class="bg-teal-700 text-white py-3 rounded">Submit Request</button>
+</form>
+</div>
+</section>
 
-        <div class="md:col-span-2 text-xs text-gray-600">
-          ID cards will be provided for active policies only. A licensed agent from Union St Insurance Group may contact you to verify policy information before sending identification cards.
-        </div>
+<!-- Claim -->
+<section id="report-claim" class="py-16 bg-gray-100 text-center">
+<h2 class="text-3xl font-bold mb-6">Report a Claim</h2>
+<p class="mb-6">Contact your carrier or call our office for assistance.</p>
+<a href="tel:+12172824441" class="bg-teal-700 text-white px-6 py-3 rounded">Call Our Office</a>
+</section>
 
-        <button class="bg-teal-700 text-white px-6 py-3 rounded shadow md:col-span-2 hover:bg-teal-800">Request ID Card</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Policy Change Request -->
-  <section id="policy-change" class="py-16 bg-white">
-    <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-6 text-center">Request a Policy Change</h2>
-      <p class="text-gray-600 text-center mb-8">Use this form to request changes to your existing insurance policy such as adding or removing a vehicle, updating your address, adding a driver, or requesting a certificate of insurance.</p>
-
-      <form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="bg-gray-50 p-6 rounded shadow grid md:grid-cols-2 gap-4">
-        <input type="text" placeholder="Full Name" class="border p-3 rounded" required>
-        <input type="text" placeholder="Policy Number (if available)" class="border p-3 rounded">
-        <input type="text" placeholder="Phone Number" class="border p-3 rounded" required>
-        <input type="email" placeholder="Email Address" class="border p-3 rounded">
-
-        <div class="md:col-span-2">
-          <label class="font-semibold">Type of Request</label>
-          <select class="border p-3 rounded w-full mt-1">
-            <option>Add Vehicle</option>
-            <option>Remove Vehicle</option>
-            <option>Add Driver</option>
-            <option>Remove Driver</option>
-            <option>Change Address</option>
-            <option>Request Certificate of Insurance</option>
-            <option>Other Policy Change</option>
-          </select>
-        </div>
-
-        <textarea placeholder="Details of the requested change" class="border p-3 rounded md:col-span-2"></textarea>
-
-        <div class="md:col-span-2 text-xs text-gray-600">
-          Requests submitted through this form are not automatically bound or guaranteed. A licensed agent from Union St Insurance Group will review your request and confirm any policy changes with you before they take effect.
-        </div>
-
-        <button class="bg-teal-700 text-white px-6 py-3 rounded shadow md:col-span-2 hover:bg-teal-800">Submit Policy Change Request</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Report a Claim Section -->
-  <section id="report-claim" class="py-16 bg-gray-100">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-6">Report a Claim</h2>
-      <p class="text-gray-600 mb-8">If you need to report a claim, we recommend contacting your insurance carrier directly for the fastest service. If you need assistance, please call our office and we will help guide you through the claims process.</p>
-
-      <div class="flex flex-col md:flex-row gap-4 justify-center">
-        <a href="tel:+12172824441" class="bg-teal-700 text-white px-6 py-3 rounded shadow hover:bg-teal-800 font-semibold">Call Our Office</a>
-        <a href="#carrier-payments" class="bg-white border border-teal-700 text-teal-700 px-6 py-3 rounded shadow font-semibold">Find Your Carrier</a>
-      </div>
-
-      <p class="text-xs text-gray-500 mt-8">Claims are subject to the terms, conditions, and coverage limits of the applicable insurance policy. Reporting a claim does not guarantee coverage or payment of damages. Coverage determinations are made by the insurance carrier.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 py-10">
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">
-      <div>
-        <h3 class="text-lg font-bold text-white">Union St Insurance Group</h3>
-        <p>Decatur, Illinois</p>
-        <p>Serving Illinois & Indiana</p>
-      </div>
-      <div>
-        <h4 class="font-semibold text-white mb-2">Services</h4>
-        <ul class="space-y-1 text-sm">
-          <li>Auto Insurance</li>
-          <li>Homeowners Insurance</li>
-          <li>Life Insurance</li>
-          <li>Business Insurance</li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold text-white mb-2">Legal</h4>
-        <p class="text-sm">Union St Insurance Group is a licensed insurance brokerage. Insurance coverage is subject to policy terms, conditions, and underwriting approval. Not all applicants will qualify. Availability varies by state and carrier.</p>
-      </div>
-    </div>
-    <div class="text-center text-xs mt-6">© <span id="year"></span> Union St Insurance Group. All rights reserved.</div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    function addDriver() {
-      const container = document.getElementById('drivers');
-      const div = document.createElement('div');
-      div.className = 'grid md:grid-cols-3 gap-3';
-      div.innerHTML = `
-        <input type="text" placeholder="Driver Name" class="border p-3 rounded">
-        <input type="date" placeholder="DOB" class="border p-3 rounded">
-        <input type="text" placeholder="License Number" class="border p-3 rounded">
-      `;
-      container.appendChild(div);
-    }
-
-    function toggleInfo(id) {
-      const el = document.getElementById(id);
-      if (el) {
-        el.classList.toggle('hidden');
-      }
-    }
-
-    function addVehicle() {
-      const container = document.getElementById('vehicles');
-      const div = document.createElement('div');
-      div.className = 'grid md:grid-cols-3 gap-3';
-      div.innerHTML = `
-        <input type="text" placeholder="Year / Make / Model" class="border p-3 rounded">
-        <input type="text" placeholder="VIN Number" class="border p-3 rounded">
-        <input type="text" placeholder="Primary Use (Commute, Pleasure, etc.)" class="border p-3 rounded">
-      `;
-      container.appendChild(div);
-    }
-  </script>
-  <!-- Floating Call & Text Buttons (Mobile Friendly) -->
-  <div class="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
-    <a href="tel:+12172824441" class="bg-teal-700 text-white px-5 py-3 rounded-full shadow-lg font-semibold">📞 Call</a>
-    <a href="sms:+12172824441" class="bg-white text-teal-700 border border-teal-700 px-5 py-3 rounded-full shadow-lg font-semibold">💬 Text</a>
-  </div>
-
-  <!-- Start of Tawk.to Script -->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/699d0e5dd737701c38a644ff/1ji6o07ge';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-  <!-- End of Tawk.to Script -->
-<!-- Exit Intent Lead Capture -->
-<div id="quotePopup" class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-50">
-  <div class="bg-white p-8 rounded shadow max-w-md text-center">
-    <h3 class="text-2xl font-bold mb-3">Before You Go...</h3>
-    <p class="mb-4 text-gray-600">Get a fast insurance quote and see how much you could save.</p>
-    <a href="#auto" class="bg-teal-700 text-white px-6 py-3 rounded shadow">Get My Quote</a>
-    <div class="mt-4">
-      <button onclick="document.getElementById('quotePopup').classList.add('hidden')" class="text-sm text-gray-500">No thanks</button>
-    </div>
-  </div>
+<!-- Sticky Mobile Bar -->
+<div class="fixed bottom-0 left-0 w-full bg-white border-t shadow md:hidden">
+<div class="grid grid-cols-3 text-center">
+<a href="tel:+12172824441" class="py-3">📞 Call</a>
+<a href="sms:+12172824441" class="py-3">💬 Text</a>
+<a href="#auto" class="py-3">📝 Quote</a>
+</div>
 </div>
 
 <script>
-let popupShown=false;
-document.addEventListener('mouseout',function(e){
-  if(!popupShown && e.clientY<10){
-    document.getElementById('quotePopup').classList.remove('hidden');
-    popupShown=true;
-  }
-});
+function toggleMobileMenu(){
+const menu=document.getElementById('mobileMenu');
+menu.classList.toggle('hidden');
+}
 </script>
+
 </body>
 </html>
-
