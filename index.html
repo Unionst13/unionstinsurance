@@ -18,6 +18,26 @@ background-position:center;
 </head>
 
 <body class="font-sans text-gray-800">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Union St Insurance Group</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+.hero-parallax{
+background-attachment:fixed;
+background-size:cover;
+background-position:center;
+}
+@media(max-width:768px){
+.hero-parallax{background-attachment:scroll;} /* better performance on phones */
+}
+</style>
+</head>
+
+<body class="font-sans text-gray-800">
 
 <!-- HEADER -->
 <header class="bg-white shadow sticky top-0 z-40">
@@ -392,3 +412,378 @@ menu.classList.toggle('hidden');
 
 </body>
 </html>
+
+<!-- HEADER -->
+<header class="bg-white shadow sticky top-0 z-40">
+<div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+
+<div class="flex items-center gap-3">
+
+<!-- STREET SIGN LOGO -->
+<svg viewBox="0 0 220 120" width="80" height="60" xmlns="http://www.w3.org/2000/svg">
+<rect x="104" y="10" width="12" height="100" fill="#374151" />
+<rect x="108" y="10" width="4" height="100" fill="#6b7280" />
+<g transform="rotate(-8 110 45)">
+<rect x="20" y="20" width="180" height="40" rx="6" fill="#0f766e" stroke="#1f2937" stroke-width="3"/>
+<text x="110" y="45" text-anchor="middle" font-size="22" fill="#ffffff" font-weight="bold">UNION ST</text>
+</g>
+<g transform="rotate(6 110 75)">
+<rect x="40" y="60" width="140" height="34" rx="6" fill="#374151" stroke="#111827" stroke-width="3"/>
+<text x="110" y="82" text-anchor="middle" font-size="16" fill="#ffffff" font-weight="bold">INSURANCE</text>
+</g>
+</svg>
+
+<div>
+<h1 class="text-xl font-bold">Union St Insurance Group</h1>
+<p class="text-xs text-gray-500">Serving Illinois & Indiana</p>
+</div>
+
+</div>
+
+<!-- DESKTOP NAV -->
+<nav class="hidden md:flex gap-6 text-sm font-medium">
+<a href="#auto" class="hover:text-teal-700">Auto</a>
+<a href="#home" class="hover:text-teal-700">Home</a>
+<a href="#life" class="hover:text-teal-700">Life</a>
+<a href="#business" class="hover:text-teal-700">Business</a>
+<a href="#payments" class="hover:text-teal-700">Payment Center</a>
+<a href="#policy-change" class="hover:text-teal-700">Policy Change</a>
+<a href="#report-claim" class="hover:text-teal-700">File a Claim</a>
+</nav>
+
+<button onclick="toggleMobileMenu()" class="md:hidden text-2xl">☰</button>
+
+</div>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="hidden bg-white border-t md:hidden">
+<div class="flex flex-col text-center p-4 gap-3">
+<a href="#auto">Auto</a>
+<a href="#home">Home</a>
+<a href="#life">Life</a>
+<a href="#business">Business</a>
+<a href="#payments">Payment Center</a>
+<a href="#policy-change">Policy Change</a>
+<a href="#report-claim">File a Claim</a>
+</div>
+</div>
+
+</header>
+
+<!-- HERO SECTION WITH RURAL ROAD BACKGROUND -->
+<section class="hero-parallax relative py-24" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');">
+
+<!-- gradient teal overlay -->
+<div class="absolute inset-0 bg-gradient-to-b from-teal-700/40 via-teal-700/30 to-teal-700/10"></div>
+
+<div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-4 items-center text-white">
+
+<div>
+<h2 class="text-4xl font-bold mb-4">Compare Insurance Quotes in Minutes</h2>
+<p class="mb-6 text-gray-200">Union St Insurance Group compares policies from top insurance carriers to find the best coverage and value across Illinois and Indiana.</p>
+<a href="#auto" class="bg-teal-700 text-white px-6 py-3 rounded shadow">Start Quote</a>
+</div>
+
+<!-- 60 SECOND QUOTE FORM -->
+<div class="bg-white/85 backdrop-blur-lg p-6 rounded-xl shadow-2xl border border-white/40 text-gray-800 transform md:translate-y-6">
+<h3 class="text-xl font-bold mb-4">Get Your Rate in 60 Seconds</h3>
+<form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="space-y-3">
+<input type="text" placeholder="ZIP Code" class="border p-3 rounded w-full" required>
+<select class="border p-3 rounded w-full">
+<option>Insurance Type</option>
+<option>Auto</option>
+<option>Home</option>
+<option>Life</option>
+<option>Business</option>
+</select>
+<select class="border p-3 rounded w-full">
+<option>Currently Insured?</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+<select class="border p-3 rounded w-full">
+<option>Any accidents in last 3 years?</option>
+<option>No</option>
+<option>Yes</option>
+</select>
+<input type="text" placeholder="Phone or Email" class="border p-3 rounded w-full" required>
+<button class="bg-teal-700 text-white w-full py-3 rounded">Get Quote</button>
+</form>
+<p class="text-xs text-gray-500 mt-3">Quotes subject to underwriting and eligibility.</p>
+</div>
+
+</div>
+</section>
+
+<!-- AUTO INSURANCE QUOTE -->
+<section id="auto" class="py-16 bg-white">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold mb-6 text-center">Auto Insurance Quote</h2>
+<form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="grid md:grid-cols-2 gap-4">
+<input type="text" placeholder="Full Name" class="border p-3 rounded" required>
+<input type="text" placeholder="Address" class="border p-3 rounded" required>
+<input type="date" placeholder="Date of Birth" class="border p-3 rounded" required>
+<input type="text" placeholder="Driver's License Number" class="border p-3 rounded">
+<input type="text" placeholder="Vehicle VIN" class="border p-3 rounded">
+<select class="border p-3 rounded">
+<option>Current Insurance?</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+<select class="border p-3 rounded">
+<option>Coverage Type</option>
+<option>Liability Only</option>
+<option>Comprehensive & Collision</option>
+</select>
+<select class="border p-3 rounded">
+<option>Comprehensive Deductible</option>
+<option>$200</option>
+<option>$500</option>
+<option>$1000</option>
+<option>$2000</option>
+</select>
+<select class="border p-3 rounded">
+<option>Collision Deductible</option>
+<option>$200</option>
+<option>$500</option>
+<option>$1000</option>
+<option>$2000</option>
+</select>
+<textarea placeholder="Driving history or additional drivers/vehicles" class="border p-3 rounded md:col-span-2"></textarea>
+<button class="bg-teal-700 text-white py-3 rounded md:col-span-2">Request Auto Quote</button>
+</form>
+</div>
+</section>
+
+<!-- HOME INSURANCE QUOTE -->
+<section id="home" class="py-16 bg-gray-100">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold mb-6 text-center">Home Insurance Quote</h2>
+<form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="grid md:grid-cols-2 gap-4">
+<input type="text" placeholder="Full Name" class="border p-3 rounded" required>
+<input type="text" placeholder="Property Address" class="border p-3 rounded" required>
+<input type="number" placeholder="Square Footage" class="border p-3 rounded">
+<input type="number" placeholder="Year Built" class="border p-3 rounded">
+<select class="border p-3 rounded">
+<option>Basement?</option>
+<option>No Basement</option>
+<option>Unfinished Basement</option>
+<option>Finished Basement</option>
+</select>
+<select class="border p-3 rounded">
+<option>Swimming Pool?</option>
+<option>No</option>
+<option>Yes</option>
+</select>
+<input type="text" placeholder="Age of Roof" class="border p-3 rounded">
+<textarea placeholder="Additional details" class="border p-3 rounded md:col-span-2"></textarea>
+<button class="bg-teal-700 text-white py-3 rounded md:col-span-2">Request Home Quote</button>
+</form>
+</div>
+</section>
+
+<!-- LIFE INSURANCE QUOTE -->
+<section id="life" class="py-16 bg-white">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold mb-6 text-center">Life Insurance Quote</h2>
+<form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="grid md:grid-cols-2 gap-4">
+<input type="text" placeholder="Full Name" class="border p-3 rounded" required>
+<input type="date" placeholder="Date of Birth" class="border p-3 rounded">
+<input type="number" placeholder="Coverage Amount" class="border p-3 rounded">
+<select class="border p-3 rounded">
+<option>Tobacco Use?</option>
+<option>No</option>
+<option>Yes</option>
+</select>
+<input type="text" placeholder="Phone" class="border p-3 rounded">
+<input type="email" placeholder="Email" class="border p-3 rounded">
+<textarea placeholder="Health conditions or additional info" class="border p-3 rounded md:col-span-2"></textarea>
+<button class="bg-teal-700 text-white py-3 rounded md:col-span-2">Request Life Quote</button>
+</form>
+</div>
+</section>
+
+<!-- BUSINESS INSURANCE QUOTE -->
+<section id="business" class="py-16 bg-gray-100">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold mb-6 text-center">Business Insurance Quote</h2>
+<form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="grid md:grid-cols-2 gap-4">
+<input type="text" placeholder="Business Name" class="border p-3 rounded" required>
+<input type="text" placeholder="Business Address" class="border p-3 rounded">
+<input type="text" placeholder="Type of Business" class="border p-3 rounded">
+<input type="number" placeholder="Years in Business" class="border p-3 rounded">
+<input type="number" placeholder="Number of Employees" class="border p-3 rounded">
+<input type="text" placeholder="Annual Revenue" class="border p-3 rounded">
+<textarea placeholder="Coverage needs or description of operations" class="border p-3 rounded md:col-span-2"></textarea>
+<button class="bg-teal-700 text-white py-3 rounded md:col-span-2">Request Business Quote</button>
+</form>
+</div>
+</section>
+
+<!-- FLOATING CALL/TEXT BUTTONS -->
+<div class="fixed right-4 bottom-24 hidden md:flex flex-col gap-3 z-50">
+<a href="tel:+12172824441" class="bg-teal-700 text-white px-4 py-3 rounded shadow">📞 Call Us</a>
+<a href="sms:+12172824441" class="bg-teal-700 text-white px-4 py-3 rounded shadow">💬 Text Us</a>
+</div>
+
+<!-- CARRIER COMPARISON -->
+<section class="py-16 bg-white text-center">
+<h2 class="text-3xl font-bold mb-6">Compare 30+ Insurance Companies</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-6xl mx-auto text-sm font-semibold opacity-80">
+<div>Nationwide</div>
+<div>Hanover</div>
+<div>Chubb</div>
+<div>Foremost</div>
+<div>Bristol West</div>
+<div>American Modern</div>
+<div>AmTrust</div>
+<div>BiBerk</div>
+<div>Next Insurance</div>
+<div>Branch</div>
+<div>Root</div>
+<div>Great American</div>
+</div>
+</section>
+
+<!-- TRUST SECTION -->
+<section class="py-16 bg-gray-50">
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+
+<div class="bg-white p-6 rounded shadow">
+<div class="text-4xl mb-3">🛡️</div>
+<h3 class="font-bold mb-2">Reliable Protection</h3>
+<p class="text-sm text-gray-600">We partner with financially strong insurance companies.</p>
+</div>
+
+<div class="bg-white p-6 rounded shadow">
+<div class="text-4xl mb-3">⚖️</div>
+<h3 class="font-bold mb-2">Independent Comparison</h3>
+<p class="text-sm text-gray-600">We compare multiple carriers to find the best coverage.</p>
+</div>
+
+<div class="bg-white p-6 rounded shadow">
+<div class="text-4xl mb-3">🤝</div>
+<h3 class="font-bold mb-2">Personal Service</h3>
+<p class="text-sm text-gray-600">Local support from experienced independent agents.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CUSTOMER REVIEWS -->
+<section class="py-16 bg-white">
+<div class="max-w-6xl mx-auto text-center">
+<h2 class="text-3xl font-bold mb-10">What Our Clients Say</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-gray-50 p-6 rounded shadow">
+<div class="text-yellow-500 text-xl mb-2">★★★★★</div>
+<p class="text-sm text-gray-600">Union St Insurance made the process extremely easy. They compared multiple companies and saved me a lot on my auto and home insurance.</p>
+<p class="mt-4 font-semibold">— Sarah M.</p>
+</div>
+
+<div class="bg-gray-50 p-6 rounded shadow">
+<div class="text-yellow-500 text-xl mb-2">★★★★★</div>
+<p class="text-sm text-gray-600">Very professional and responsive. I appreciated being able to get quotes quickly and having someone explain the coverage options.</p>
+<p class="mt-4 font-semibold">— James R.</p>
+</div>
+
+<div class="bg-gray-50 p-6 rounded shadow">
+<div class="text-yellow-500 text-xl mb-2">★★★★★</div>
+<p class="text-sm text-gray-600">Excellent service. They found a great policy for my business and handled everything quickly.</p>
+<p class="mt-4 font-semibold">— Melissa T.</p>
+</div>
+
+<div class="bg-gray-50 p-6 rounded shadow">
+<div class="text-yellow-500 text-xl mb-2">★★★★★</div>
+<p class="text-sm text-gray-600">I highly recommend Union St Insurance. They explained the coverage clearly and helped me choose the best option for my family.</p>
+<p class="mt-4 font-semibold">— David L.</p>
+</div>
+
+<div class="bg-gray-50 p-6 rounded shadow">
+<div class="text-yellow-500 text-xl mb-2">★★★★★</div>
+<p class="text-sm text-gray-600">Great experience from start to finish. Fast quotes, great communication, and very knowledgeable.</p>
+<p class="mt-4 font-semibold">— Amanda K.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CUSTOMER SERVICE CENTER -->
+<section class="py-16 bg-white">
+<div class="max-w-6xl mx-auto text-center">
+<h2 class="text-3xl font-bold mb-6">Customer Service Center</h2>
+<div class="grid md:grid-cols-4 gap-6">
+<a href="#payments" class="p-6 shadow rounded">💳 Make Payment</a>
+<a href="#policy-change" class="p-6 shadow rounded">📝 Policy Change</a>
+<a href="#report-claim" class="p-6 shadow rounded">⚠️ File Claim</a>
+<a href="#id-card" class="p-6 shadow rounded">🪪 ID Card</a>
+</div>
+</div>
+</section>
+
+<!-- PAYMENT CENTER -->
+<section id="payments" class="py-16 bg-gray-100 text-center">
+<h2 class="text-3xl font-bold mb-6">Make a Payment</h2>
+<p class="mb-6">Submit agency service fees or policy down payments.</p>
+<a href="https://paypal.me/unionstinsurance" class="bg-teal-700 text-white px-6 py-3 rounded">Pay with PayPal</a>
+</section>
+
+<!-- POLICY CHANGE FORM -->
+<section id="policy-change" class="py-16 bg-white">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold mb-6 text-center">Request Policy Change</h2>
+<form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="grid gap-4">
+<input type="text" placeholder="Full Name" class="border p-3 rounded" required>
+<input type="text" placeholder="Policy Number" class="border p-3 rounded">
+<textarea placeholder="Describe your requested change" class="border p-3 rounded"></textarea>
+<button class="bg-teal-700 text-white py-3 rounded">Submit Request</button>
+</form>
+</div>
+</section>
+
+<!-- ID CARD REQUEST -->
+<section id="id-card" class="py-16 bg-gray-100">
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold mb-6 text-center">Request Insurance ID Card</h2>
+<form action="https://formsubmit.co/unionstreetinsurance@consultant.com" method="POST" class="grid gap-4">
+<input type="text" placeholder="Full Name" class="border p-3 rounded" required>
+<input type="text" placeholder="Policy Number" class="border p-3 rounded">
+<input type="text" placeholder="Phone or Email" class="border p-3 rounded" required>
+<select class="border p-3 rounded">
+<option>Send by Email</option>
+<option>Send by Text</option>
+</select>
+<button class="bg-teal-700 text-white py-3 rounded">Request ID Card</button>
+</form>
+</div>
+</section>
+
+<!-- CLAIM SECTION -->
+<section id="report-claim" class="py-16 bg-white text-center">
+<h2 class="text-3xl font-bold mb-6">Report a Claim</h2>
+<p class="mb-6">Contact your carrier directly for fastest claim service or call our office for help.</p>
+<a href="tel:+12172824441" class="bg-teal-700 text-white px-6 py-3 rounded">Call Our Office</a>
+</section>
+
+<!-- STICKY MOBILE BAR -->
+<div class="fixed bottom-0 left-0 w-full bg-white border-t shadow md:hidden">
+<div class="grid grid-cols-3 text-center">
+<a href="tel:+12172824441" class="py-3">📞 Call</a>
+<a href="sms:+12172824441" class="py-3">💬 Text</a>
+<a href="#auto" class="py-3">📝 Quote</a>
+</div>
+</div>
+
+<script>
+function toggleMobileMenu(){
+const menu=document.getElementById('mobileMenu');
+menu.classList.toggle('hidden');
+}
+</script>
+
+</body>
+</html>
+
